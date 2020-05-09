@@ -1,0 +1,21 @@
+# Configuration file
+# key = value
+
+# Default
+environment:
+  name: Prod
+  identifier: 01
+  os: ${OS}
+  full-name: ${environment.name} ${environment.identifier}
+
+# Dev profile
+"%dev":
+  environment:
+    name: Dev
+    identifier: "de David"
+
+# Acceptance profile
+"%acceptance":
+  environment:
+    name: Acceptance
+    identifier: 00
